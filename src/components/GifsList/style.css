@@ -1,0 +1,20 @@
+:root {
+    --results-columns: 1;
+}
+
+.gif-list{
+    column-count: var(--results-columns);
+    column-gap: .2em;
+}
+
+@media (min-width: 600px) {
+    :root{
+        --results-columns: 2;
+    }
+}
+
+@media (min-width: 800px) {
+    :root{
+        --results-columns: 3;
+    }
+}
